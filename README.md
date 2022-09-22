@@ -1,6 +1,8 @@
-[![](https://img.shields.io/codacy/grade/6a8e207cf98246169e633d6f22da9d9c)](https://hub.docker.com/r/cm2network/steamcmd/) [![Docker Build Status](https://img.shields.io/docker/cloud/build/cm2network/steamcmd.svg)](https://hub.docker.com/r/cm2network/steamcmd/) [![Docker Stars](https://img.shields.io/docker/stars/cm2network/steamcmd.svg)](https://hub.docker.com/r/cm2network/steamcmd/) [![Docker Pulls](https://img.shields.io/docker/pulls/cm2network/steamcmd.svg)](https://hub.docker.com/r/cm2network/steamcmd/) [![](https://img.shields.io/docker/image-size/cm2network/steamcmd)](https://img.shields.io/docker/image-size/cm2network/steamcmd) [![Discord](https://img.shields.io/discord/747067734029893653)](https://discord.gg/7ntmAwM)
+**This project is an informal one, produced by an individual.**
+
+[Github](https://github.com/warai-bukuro/steamcmd-arm64/blob/master/README.md)
+
 # Supported tags and respective `Dockerfile` links
-  -	[`steam`, `latest` (*bullseye/Dockerfile*)](https://github.com/CM2Walki/steamcmd/blob/master/bullseye/Dockerfile)
   -	[`root` (*bullseye-root/Dockerfile*)](https://github.com/CM2Walki/steamcmd/blob/master/bullseye-root/Dockerfile)
 
 # What is SteamCMD?
@@ -41,13 +43,7 @@ https://hub.docker.com/r/cm2network/mordhau/
 # Image Variants:
 The `steamcmd` images come in two flavors, each designed for a specific use case.
 
-## `steamcmd:latest`
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used as the base to build other images off of. This image's default user is `steam`, any command executed in a higher layer `Dockerfile` will therefor be executed as that user.<br/>
-
 ## `steamcmd:root`
 This is a specialized image. This image's default user is `root`. If you need to install additional packages for you game server and do not want to create excess layers, then this is the right choice.
 
 _Note: Running the `steamcmd.sh` as `root` will fail because the owner is the user `steam`, either swap the active user using `su steam` or use chown to change the ownership of the directory._
-
-# Contributors
-[![Contributors Display](https://badges.pufler.dev/contributors/CM2Walki/steamcmd?size=50&padding=5&bots=false)](https://github.com/CM2Walki/steamcmd/graphs/contributors)
