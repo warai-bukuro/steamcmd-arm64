@@ -1,7 +1,7 @@
 ############################################################
 # Dockerfile that contains SteamCMD
 ############################################################
-FROM atrkulja/x86_64-on-arm64
+FROM wara1bukuro/x86_64-on-arm64
 
 LABEL maintainer="warai_bukuro"
 
@@ -14,7 +14,7 @@ ENV STEAMCMDDIR "${HOMEDIR}/steamcmd"
 RUN set -x \
 	# Install, update & upgrade packages
 	&& apt-get update \
-	&& apt-get install -y --no-install-recommends --no-install-suggests \
+	&& apt-get install -y \
                 wget \
                 ca-certificates \
                 nano \
