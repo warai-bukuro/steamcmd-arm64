@@ -1,5 +1,7 @@
 **This project is an informal one, produced by an individual.**
 
+**To use this image, [box86](https://github.com/ptitSeb/box86) and [box64](https://github.com/ptitSeb/box64) must be installed on the host OS.**
+
 [Github](https://github.com/warai-bukuro/steamcmd-arm64/blob/master/README.md)
 
 # Supported tags and respective `Dockerfile` links
